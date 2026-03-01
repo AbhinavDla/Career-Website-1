@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for a position at Wholesalers United.">
+    <meta name="author" content="Abhinav, Prasanna, Sathvik">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <title>Apply - Wholesalers United</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav nav--scrolled" id="nav">
+        <a href="index.html" class="nav__logo">
+            <img src="assets/images/logo-small.png" alt="Wholesalers United logo">
+            <span>Wholesalers United</span>
+        </a>
+        <div class="nav__links">
+            <a href="careers.html" class="nav__link">Careers</a>
+            <a href="benefits.html" class="nav__link">Benefits</a>
+            <a href="ourStory.html" class="nav__link">Our Story</a>
+            <a href="joinus.html" class="nav__cta">Join Us</a>
+        </div>
+        <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="careers.html" class="mobile-menu__link">Careers</a>
+        <a href="benefits.html" class="mobile-menu__link">Benefits</a>
+        <a href="ourStory.html" class="mobile-menu__link">Our Story</a>
+        <a href="joinus.html" class="mobile-menu__link">Join Us</a>
+    </div>
+
+    <main>
+        <!-- Header -->
+        <section class="application-header">
+            <div class="container">
+                <h1 class="application-header__title">Apply Now</h1>
+                <p class="application-header__subtext">Take the first step toward your new career.</p>
+            </div>
+        </section>
+
+        <!-- Application Form -->
+        <section class="application-form">
+            <div class="application-card" id="applicationCard">
+                <form id="applicationForm">
+                    <div class="application-grid">
+                        <div class="form-field">
+                            <label for="firstName" class="form-field__label">First Name <span class="required">*</span></label>
+                            <input type="text" id="firstName" name="first-name" class="form-field__input" placeholder="John" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="lastName" class="form-field__label">Last Name <span class="required">*</span></label>
+                            <input type="text" id="lastName" name="last-name" class="form-field__input" placeholder="Doe" required>
+                        </div>
+                        <div class="form-field form-field--full">
+                            <label for="email" class="form-field__label">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" class="form-field__input" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone" class="form-field__label">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" class="form-field__input" placeholder="(123) 456-7890" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ssn" class="form-field__label">Social Security Number <span class="required">*</span></label>
+                            <input type="text" id="ssn" name="ssn" class="form-field__input" placeholder="123-45-6789" required>
+                        </div>
+                        <div class="form-field form-field--full">
+                            <label for="address" class="form-field__label">Address <span class="required">*</span></label>
+                            <input type="text" id="address" name="address" class="form-field__input" placeholder="123 Main St, City, State, ZIP" required>
+                        </div>
+                        <div class="form-field form-field--full">
+                            <label for="education" class="form-field__label">Education <span class="required">*</span></label>
+                            <input type="text" id="education" name="Education" class="form-field__input" placeholder="Degree and University" required>
+                        </div>
+                        <div class="form-field form-field--full">
+                            <label for="jobApplied" class="form-field__label">Position Applying For <span class="required">*</span></label>
+                            <select id="jobApplied" name="job" class="form-field__select" required>
+                                <option value="" disabled selected>Select a position</option>
+                                <option value="Junior Manager">Junior Manager</option>
+                                <option value="Junior Contractor">Junior Contractor</option>
+                                <option value="Junior Sales Associate">Junior Sales Associate</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="form-submit" id="submitBtn">Submit Application</button>
+                    </div>
+                </form>
+
+                <!-- Success Message -->
+                <div class="form-success" id="formSuccess">
+                    <div class="form-success__icon"><i class="fas fa-check-circle"></i></div>
+                    <h2 class="form-success__heading">Application Submitted</h2>
+                    <p class="form-success__text">Thank you for applying! We'll review your application and get back to you soon.</p>
+                    <a href="index.html" class="btn btn--secondary" style="margin-top: var(--space-8);">Back to Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <div class="footer__logo">Wholesalers United</div>
+                <p class="footer__tagline">Empowering wholesalers at every stage of their journey.</p>
+            </div>
+            <div>
+                <h4 class="footer__heading">Site Links</h4>
+                <nav class="footer__links">
+                    <a href="index.html" class="footer__link">Home</a>
+                    <a href="careers.html" class="footer__link">Careers</a>
+                    <a href="benefits.html" class="footer__link">Benefits</a>
+                    <a href="ourStory.html" class="footer__link">Our Story</a>
+                    <a href="joinus.html" class="footer__link">Join Us</a>
+                </nav>
+            </div>
+            <div class="footer__contact">
+                <h4 class="footer__heading">Contact</h4>
+                <div class="footer__contact-item">
+                    <a href="mailto:wholesalersun@gmail.com">wholesalersun@gmail.com</a>
+                </div>
+                <div class="footer__contact-item">
+                    <a href="tel:+14258779593">425-877-9593</a>
+                </div>
+                <div class="footer__socials">
+                    <a href="https://www.instagram.com/race.2space/" class="footer__social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="footer__social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer__social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer__social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__map">
+                <h4 class="footer__heading">Location</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBC4UJkv5-2PbhkRi8SfVWRxBMUucpZniI&q=Eiffel+Tower,Paris+France"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Office location map"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2024 Wholesalers United. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+    <!-- Firebase Integration -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+        import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAHhtnzZZf1qQBhHcvB046GLVsG6JbIgmU",
+            authDomain: "fbla-website-2023-2024.firebaseapp.com",
+            databaseURL: "https://fbla-website-2023-2024-default-rtdb.firebaseio.com",
+            projectId: "fbla-website-2023-2024",
+            storageBucket: "fbla-website-2023-2024.appspot.com",
+            messagingSenderId: "694502114792",
+            appId: "1:694502114792:web:91c6f21dd1eb976c04105d",
+            measurementId: "G-TGVRCJD32X"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        function submitForm() {
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const ssn = document.getElementById('ssn').value.trim();
+            const address = document.getElementById('address').value.trim();
+            const education = document.getElementById('education').value.trim();
+            const jobApplied = document.getElementById('jobApplied').value;
+
+            if (!firstName || !lastName || !email || !phone || !ssn || !address || !education || !jobApplied) {
+                return;
+            }
+
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Submitting...';
+
+            const database = getDatabase();
+            const applicationsRef = ref(database, `Applications/${firstName}_${lastName}`);
+            const newApplicationRef = push(applicationsRef);
+
+            set(newApplicationRef, {
+                firstName: firstName,
+                lastName: lastName,
+                email: email,
+                phone: phone,
+                ssn: ssn,
+                address: address,
+                education: education,
+                jobApplied: jobApplied
+            }).then(() => {
+                document.getElementById('applicationForm').style.display = 'none';
+                document.getElementById('formSuccess').classList.add('form-success--visible');
+            }).catch(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Submit Application';
+                alert('Something went wrong. Please try again.');
+            });
+        }
+
+        document.getElementById('applicationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            submitForm();
+        });
+    </script>
+</body>
+</html>
